@@ -8,15 +8,31 @@ module traffic_light (
 
     always @(posedge clk or posedge rst) begin
         if (rst) begin
-            state <= RED; timer <= 0;
-            red <= 1; yellow <= 0; green <= 0;
-        end else begin
+            state <= RED; 
+            timer <= 0;
+            red <= 1; 
+            yellow <= 0; 
+            green <= 0;
+        end 
+        else begin
             timer <= timer + 1;
             case (state)
-                RED:    if (timer == 9)  begin state <= GREEN;  timer <= 0; end
-                GREEN:  if (timer == 9)  begin state <= YELLOW; timer <= 0; end
-                YELLOW: if (timer == 3)  begin state <= RED;    timer <= 0; end
-                default:                 begin state <= RED;    timer <= 0; end
+                RED:    if (timer == 9)  begin 
+                    state <= GREEN;  
+                    timer <= 0; 
+                end
+                GREEN:  if (timer == 9)  begin 
+                    state <= YELLOW; 
+                    timer <= 0; 
+                end
+                YELLOW: if (timer == 3)  begin 
+                    state <= RED;    
+                    timer <= 0; 
+                end
+                default: begin 
+                    state <= RED;    
+                    timer <= 0; 
+                end
             endcase
         end
     end
