@@ -2,8 +2,7 @@ module alu (
     input  [7:0] a, b,
     input  [2:0] op,     
     output reg [7:0] result,
-    output reg zero,
-    output reg overflow
+    output reg zero,overflow
 );
     always @(*) begin
         case (op)
