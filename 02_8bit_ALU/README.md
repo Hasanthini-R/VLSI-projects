@@ -29,6 +29,6 @@ Fully combinational design with zero flag and signed overflow detection.
 - `waves/alu_waveform.png` – Verified simulation results
 
 ## Live Demo
-[Run on EDA Playground](https://edaplayground.com/x/YOUR_LINK_HERE)  
+[Run on EDA Playground](https://www.edaplayground.com/x/fzGQ)  
 
 Learned: Combinational logic, signed overflow detection, flag generation, waveform analysis.
