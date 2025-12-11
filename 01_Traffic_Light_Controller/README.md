@@ -16,3 +16,8 @@ Fully synchronous, synthesizable Verilog design with proper reset.
 - `rtl/traffic_light.v` – Main design
 - `tb/tb_traffic_light.v` – Testbench
 - `waves/` – Simulation waveform
+
+## Live Demo
+[Run on EDA Playground](https://www.edaplayground.com/x/piv6)
+
+Learned: FSM design, synchronous timing, state encoding
