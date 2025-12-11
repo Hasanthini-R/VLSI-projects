@@ -4,11 +4,11 @@ module tb;
     wire [7:0] result;
     wire zero, overflow;
 
-    alu dut (.a(a), .b(b), .op(op), .result(result), .zero(zero), .overflow(overflow));
+    alu dut (.a(a),.b(b),.op(op),.result(result),.zero(zero),.overflow(overflow));
 
     initial begin
-        $display("a     b     op  result  zero  overflow");
-        $monitor("%d  %d  %b   %d     %b     %b", a, b, op, result, zero, overflow);
+        $display("a    b    op    result    zero    overflow");
+        $monitor("%d    %d    %b    %d    %b    %b", a, b, op, result, zero, overflow);
 
         repeat(20) begin
           a = $random; 
