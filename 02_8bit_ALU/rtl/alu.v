@@ -18,6 +18,7 @@ module alu (
             default: result = 8'd0;
         endcase
         zero = (result == 0);
-        overflow = (op==0 || op==1) ? overflow : 1'b0;
+        overflow = ((op == 3'b000) || (op == 3'b001)) && 
+           (a[7] == b[7]) && (result[7] != a[7]);
     end
 endmodule
