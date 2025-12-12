@@ -8,8 +8,7 @@ module sync_fifo (
     output full,
     output empty,
     output almost_full,
-    output almost_empty
-);
+    output almost_empty);
 
     reg [7:0] mem [0:7];          
     reg [2:0] wr_ptr, rd_ptr;    
