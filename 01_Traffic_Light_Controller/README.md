@@ -13,9 +13,9 @@ Fully synchronous, synthesizable Verilog design with proper reset.
 - Combinational output decoder
 
 ## Files
-- `rtl/traffic_light.v` – Main design
-- `tb/tb_traffic_light.v` – Testbench
-- `waves/` – Simulation waveform
+- `traffic_light.v` – Design
+- `tb_traffic_light.v` – Testbench
+- `Traffic_light_control_waveform.png` – Waveform screenshot 
 
 ## Live Demo
 [Run on EDA Playground](https://www.edaplayground.com/x/piv6)
