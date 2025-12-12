@@ -9,7 +9,7 @@ Fully combinational design with zero flag and signed overflow detection.
 - 3-bit opcode for 8 operations
 - Zero flag (`result == 0`)
 - Signed overflow detection for ADD/SUB
-- Pure combinational logic (`always @(*)`)
+- Combinational logic (`always @(*)`)
 
 ## Operations
 | Op | Code | Operation                  | Description                  |
@@ -24,11 +24,11 @@ Fully combinational design with zero flag and signed overflow detection.
 | 7  | 111  | SLT                        | Signed less-than (A < B)     |
 
 ## Files
-- `rtl/alu.v` – Synthesizable RTL module
-- `tb/tb_alu.v` – Testbench with random vectors
-- `waves/alu_waveform.png` – Verified simulation results
+- `alu.v` – Synthesizable RTL design
+- `tb_alu.v` – Testbench
+- `alu_waveform.png` – screenshot
 
 ## Live Demo
 [Run on EDA Playground](https://www.edaplayground.com/x/fzGQ)  
 
-Learned: Combinational logic, signed overflow detection, flag generation, waveform analysis.
+Learned: Combinational logic, signed overflow detection, flag generation.
